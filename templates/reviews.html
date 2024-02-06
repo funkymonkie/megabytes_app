@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+
+{% block content%}
+
+    
+<div>
+    <ul> 
+        {% for review in customer_review_data %}
+        <li>{{review}}</li>
+        {% endfor %}
+    </ul>
+    <form method="post" action="/leave_a_review">
+        <label for="customer_review">Please leave a Review:</label>
+        <input type="text" id="customer_review" name="customer_review" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock%}

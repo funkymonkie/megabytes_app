@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(47, 65, 99, 0.37);
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(31, 28, 110);
+}
+
+nav a {
+    color: beige; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color: #d5ff59; 
+}
+.title {
+            font-weight: bold;
+            color: #db506e;
+        }
+.songs {
+            flex: 1;
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: rgb(31, 28, 110); 
+            border: 5px solid #536dff;
+            color: #db506e;
+            align-items: center;
+
+            font-size: calc(0.5vw + 5px);
+        }
